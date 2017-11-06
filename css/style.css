@@ -128,7 +128,7 @@ a.tel {
     font-size: 16px;
     margin-top: 2px;
     display: inline-block;
-    display: none;
+    /*display: none;*/
 }
 /*--------------------------------------------burger------------------------------------------*/
 .burger {
