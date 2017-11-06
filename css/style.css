@@ -122,14 +122,13 @@ section.upper-row {
     text-align: right;
     padding: 20px;
 }
-a.tel {
-    color: inherit;
-    text-decoration: none;
-    font-size: 16px;
-    margin-top: 2px;
-    display: inline-block;
-    /*display: none;*/
-}
+/*a.tel {*/
+    /*color: inherit;*/
+    /*text-decoration: none;*/
+    /*font-size: 16px;*/
+    /*margin-top: 2px;*/
+    /*display: inline-block;*/
+/*}*/
 
 /*--------------------------------------------menu------------------------------------------*/
 
@@ -143,12 +142,15 @@ header .drawer-hamburger {
 }
 nav.drawer-nav {
     background-color: #FFF9F1;
+    overflow: hidden;
 }
 header .drawer-menu {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
-
+header .drawer-menu .nav-tel {
+    margin-top: 30px;
+}
 header .drawer-menu-item {
     font-size: 1rem;
     color: #382E2C;
