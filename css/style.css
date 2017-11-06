@@ -130,34 +130,60 @@ a.tel {
     display: inline-block;
     /*display: none;*/
 }
-/*--------------------------------------------burger------------------------------------------*/
-.burger {
+
+/*--------------------------------------------menu------------------------------------------*/
+
+header .drawer-hamburger-icon, header .drawer-hamburger-icon:after, header .drawer-hamburger-icon:before {
+    background-color: #382E2C;
+    height: 1px;
+}
+header .drawer-hamburger {
+    position: absolute;
+    margin-left: 5px;
+}
+nav.drawer-nav {
+    background-color: #FFF9F1;
+}
+header .drawer-menu {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+header .drawer-menu-item {
+    font-size: 1rem;
     color: #382E2C;
-    position: absolute;
-    margin-left: 2px;
-    margin-top: 10px;
-    width: 20px;
-    height: 1px;
-    background-color: currentColor;
 }
-.burger::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 20px;
-    height: 1px;
-    background-color: currentColor;
-}
-.burger::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 20px;
-    height: 1px;
-    background-color: currentColor;
-}
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------burger------------------------------------------*/
+/*.burger {*/
+    /*color: #382E2C;*/
+    /*position: absolute;*/
+    /*margin-left: 2px;*/
+    /*margin-top: 10px;*/
+    /*width: 20px;*/
+    /*height: 1px;*/
+    /*background-color: currentColor;*/
+/*}*/
+/*.burger::before {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*top: -5px;*/
+    /*left: 0;*/
+    /*width: 20px;*/
+    /*height: 1px;*/
+    /*background-color: currentColor;*/
+/*}*/
+/*.burger::after {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*top: 5px;*/
+    /*left: 0;*/
+    /*width: 20px;*/
+    /*height: 1px;*/
+    /*background-color: currentColor;*/
+/*}*/
 
 /*----------------------------------------------------------------------------------------*/
 .main-pic {

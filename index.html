@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <title>Особняки на набережной</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
-<body>
-    <header>
+<body class="drawer drawer--left">
+
+    <header role="banner">
+
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li><a class="drawer-menu-item" href="#">О проекте</a></li>
+                <li><a class="drawer-menu-item" href="#">Особняк Казанцев</a></li>
+                <li><a class="drawer-menu-item" href="#">Особняк Рязанов</a></li>
+                <li><a class="drawer-menu-item" href="#">Особняк Баландин</a></li>
+                <li><a class="drawer-menu-item" href="#">Расположение</a></li>
+                <li><a class="drawer-menu-item" href="#">Галерея</a></li>
+                <li><a class="drawer-menu-item" href="#">Контакты</a></li>
+            </ul>
+            <ul class="drawer-menu tel">
+                <li><a href="tel: +7(343)286-26-26" class="drawer-menu-item">+7 (343) 268-26-26</a></li>
+            </ul>
+
+        </nav>
+
         <section class="main-pic">
             <section class="upper-row">
-                <a href="#">
-                    <div class="burger"></div>
-                </a>
-                <a href="tel: +7(343)286-26-26 " class="tel">+7(343)286-26-26</a>
+                <!--<a href="#">-->
+                    <!--<div class="burger"></div>-->
+                <!--</a>-->
+                <!--<a href="tel: +7(343)286-26-26 " class="tel">+7(343)286-26-26</a>-->
             </section>
-            
+
         </section>
         <section class="heading mhi">
             <div class="floral up"></div>
@@ -26,7 +49,8 @@
             </div>
         </section>
     </header>
-    <main class="wrapper">
+
+    <main class="wrapper" role="main">
         <h2 class="mhi">Резиденция  для компании,<br>которая пишет историю</h2>
         <a href="#" class="button gradient mlo">Особняк Казанцев</a>
         <a href="#" class="button gradient mlo">Особняк Рязанов</a>
@@ -57,6 +81,7 @@
         <p class="mlo">Из окон открывается прекрасный умиротворяющий вид на Дендрологический парк и реку Исеть, который позволяет отвлечься от интенсивного течения жизни и немного побыть наедине с собой и своими мыслями в поисках новых идей для развития. Находясь в самом центре города, у собственников и гостей особняков есть уникальная возможность насладиться прогулкой по своему парку с безукоризненными газонами и пышными цветочными клумбами, расположенными на набережной реки.</p>
         <img src="img/atmosphere.jpg" alt="" class="img mhi">
     </main>
+
     <footer>
         <a href="tel: +7(343)286-26-26" class="footer-tel">
             Отдел продаж: +7 (343) 268-26-26
@@ -72,6 +97,8 @@
     </footer>
 
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

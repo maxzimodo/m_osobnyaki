@@ -1,3 +1,3 @@
-$('#button').click(function () {
-    alert('hui');
+$(document).ready(function() {
+    $('.drawer').drawer();
 });
