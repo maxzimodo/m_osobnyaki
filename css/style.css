@@ -254,12 +254,18 @@ input:not([type='checkbox']), textarea {
     border: 1px solid #dadada;
     background: #fff;
 }
+textarea {
+    resize: vertical;
+}
 label:not(.checkbox) {
     margin-bottom: 5px;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 input:not(.checkbox), textarea {
     margin-bottom: 20px;
+    max-width: 400px;
 }
 button.button {
     margin-bottom: 20px;
