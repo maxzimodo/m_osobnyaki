@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Особняки на набережной</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body class="drawer drawer--left">
+
+<header role="banner">
+
+    <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="index.html">О проекте</a></li>
+            <li><a class="drawer-menu-item" href="kazantsev.html">Особняк Казанцев</a></li>
+            <li><a class="drawer-menu-item" href="ryazanov.html">Особняк Рязанов</a></li>
+            <li><a class="drawer-menu-item" href="balandin.html">Особняк Баландин</a></li>
+            <li><a class="drawer-menu-item" href="place.html">Расположение</a></li>
+            <li><a class="drawer-menu-item" href="gallery.html">Галерея</a></li>
+            <li><a class="drawer-menu-item" href="contacts.html">Контакты</a></li>
+            <li class="nav-tel"><a href="tel: +7(343)286-26-26" class="drawer-menu-item">+7 (343) 268-26-26</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-pic">
+        <section class="upper-row">
+            <!--<a href="tel: +7(343)286-26-26 " class="tel">+7(343)286-26-26</a>-->
+        </section>
+
+    </section>
+    <section class="heading mhi">
+        <div class="floral up"></div>
+        <div class="floral down"></div>
+        <div class="plate">
+            <h1>Избранные</h1>
+            <h3>Особняки на набережной</h3>
+        </div>
+    </section>
+</header>
+
+<main class="wrapper" role="main">
+    <h2 class="mhi">Оставьте заявку на просмотр</h2>
+    <form action= "#" method= "POST" id="form" >
+        <div class="row">
+            <div class="col">
+                <label for="name">Ваше Имя</label>
+                <input id="name" type="text" name="name" placeholder="Ваше имя" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="tel">Ваш телефон</label>
+                <input id="tel" type="tel" name="tel" placeholder="+7(xxx)xx-xx-xxx" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="name">Ваш e-mail</label>
+                <input id="email" type="email" name="email" placeholder="yourmail@domain.com">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="comments">Ваш комментарий</label>
+                <textarea id="comments" rows="7"></textarea>
+            </div>
+        </div>
+        <!--<div class="row">-->
+            <!--<div class="col">-->
+                <!--<button type="submit" class="button gradient">Отправить заявку</button>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="row mhi">
+            <div class="col">
+                <input type="checkbox" id="checkbox" class="checkbox" required>
+                <label for="checkbox" class="checkbox">Я ознакомился и соглашаюсь с политикой конфиденциальности</label>
+            </div>
+        </div>
+    </form>
+
+</main>
+
+<footer>
+    <a href="tel: +7(343)286-26-26" class="footer-tel">
+        Отдел продаж: +7 (343) 268-26-26
+    </a>
+    <a href="mailto:info@udevelopment.ru" class="email mlo">
+        info@udevelopment.ru
+    </a>
+    <a href="#" class="button gradient mlo">Скачать презентацию</a>
+    <a href="contacts.html" class="button gradient mlo">Записаться на просмотр</a>
+    <a href="http://udevelopment.ru/" target="_blank" class="to-udev">
+        <img src="img/udev_logo.svg" alt="">
+    </a>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

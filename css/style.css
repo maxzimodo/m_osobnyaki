@@ -28,9 +28,16 @@ html, body {
 p {
     text-align: left;
 }
-input {
+input:not([type='checkbox']), textarea {
     -webkit-appearance: none;
     border-radius: 0;
+    font-size: 16px;
+}
+input:not([type='checkbox']), textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadada;
+    background: #fff;
 }
 .clearfix:after {
     content: "";
@@ -62,7 +69,7 @@ h3 {
     margin-bottom: 25px;
 }
 /*--------------------------button--------------------------*/
-a.button {
+a.button, button.button {
     position: relative;
     text-decoration: none;
     display: block;
@@ -78,6 +85,9 @@ a.button {
     font-size: 20px;
     width: 269px;
     white-space: nowrap;
+    background: transparent;
+    border-top: none;
+    border-bottom: none;
 }
 .gradient::before, .gradient::after {
     position: absolute;
@@ -240,4 +250,16 @@ footer a {
 }
 footer .button {
     text-transform: inherit;
+}
+
+/*-------------------------------contact form----------------------------------------*/
+label:not(.checkbox) {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+input:not(.checkbox), textarea {
+    margin-bottom: 20px;
+}
+button.button {
+    margin-bottom: 20px;
 }
