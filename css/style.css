@@ -207,6 +207,7 @@ header .heading::after {
 }
 /*-----------------------------------------------------------------------------------*/
 header .heading .plate {
+    width: 249px;
     background-color: #FFF9F1;
     display: inline-block;
     padding: 20px;
@@ -214,12 +215,22 @@ header .heading .plate {
     border-image: linear-gradient(to right, #e28c25 0%,#fbea86 50%,#e28c25 100%) 1;
     box-shadow: 0 0 0 10px #FFF9F1;
 }
-img.img {
+img.img, .slides {
     width: 100%;
     max-width: 400px;
     height: auto;
     border: 1px solid;
     border-image: linear-gradient(to right, #e28c25 0%,#fbea86 50%,#e28c25 100%) 1;
+}
+.slides {
+    margin-left: auto;
+    margin-right: auto;
+}
+.slides-wrapper img.img {
+    border: none;
+}
+a.button.special {
+    text-transform: inherit;
 }
 ul.list {
     text-align: left;
@@ -271,3 +282,10 @@ button.button {
     margin-bottom: 20px;
 }
 
+/*----------------------------------------house-page----------------------------------*/
+/*.house-page h1 {*/
+    /*font-size: 19px;*/
+    /*white-space: nowrap;*/
+/*}*/
+
+/*------------------------------------------------slides-wrapper----------------------*/
