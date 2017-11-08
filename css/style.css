@@ -58,6 +58,9 @@ h3 {
 .mlo {
     margin-bottom: 25px;
 }
+.mtop {
+    margin-top: 40px;
+}
 /*--------------------------button--------------------------*/
 a.button, button.button {
     position: relative;
@@ -252,7 +255,9 @@ footer a {
 footer .button {
     text-transform: inherit;
 }
-
+img.batya {
+    width: 100px;
+}
 /*-------------------------------contact-form----------------------------------------*/
 input:not([type='checkbox']), textarea {
     -webkit-appearance: none;
