@@ -23,7 +23,6 @@ html, body {
     color: #382E2C;
     background-color: #FFF9F1;
     text-align: center;
-    /*overflow-x: hidden;*/
 }
 p {
     text-align: justify;
@@ -100,22 +99,6 @@ a.button, button.button {
     left: 0;
     bottom: 0;
 }
-/*----------------------------------------------------------*/
-
-/*.pic-wrapper {*/
-    /*overflow: hidden;*/
-    /*position: relative;*/
-/*}*/
-/*.pic-wrapper img {*/
-    /*position: absolute;*/
-    /*height: 101%;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*-webkit-transform: translateY(-50%) translateX(-50%);*/
-    /*-moz-transform: translateY(-50%) translateX(-50%);*/
-    /*-ms-transform: translateY(-50%) translateX(-50%);*/
-    /*transform: translateY(-50%) translateX(-50%);*/
-/*}*/
 
 /*-----------------------------------------header--------------------------------------------*/
 
@@ -127,13 +110,13 @@ section.upper-row {
     text-align: right;
     padding: 20px;
 }
-/*a.tel {*/
-    /*color: inherit;*/
-    /*text-decoration: none;*/
-    /*font-size: 16px;*/
-    /*margin-top: 2px;*/
-    /*display: inline-block;*/
-/*}*/
+a.tel {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 2px;
+    display: inline-block;
+}
 
 /*--------------------------------------------menu------------------------------------------*/
 
@@ -162,8 +145,6 @@ header .drawer-menu-item {
 }
 
 /*---------------------------------------------------------------------------------------------*/
-
-
 .main-pic {
     background: url(../img/main_img.jpg) no-repeat 50% 50%;
     background-size: cover;
@@ -210,6 +191,7 @@ header .heading::after {
 .floral.down {
     bottom: -8px;
 }
+
 /*-----------------------------------------------------------------------------------*/
 header .heading .plate {
     width: 249px;
@@ -264,6 +246,7 @@ div.contact-info {
     margin: 5px 0;
     color: inherit;
 }
+
 /*-------------------------------contact-form----------------------------------------*/
 input:not([type='checkbox']), textarea {
     -webkit-appearance: none;
@@ -293,13 +276,55 @@ button.button {
     margin-bottom: 20px;
 }
 
-/*----------------------------------------house-page----------------------------------*/
-/*.house-page h1 {*/
-    /*font-size: 19px;*/
-    /*white-space: nowrap;*/
-/*}*/
-
 /*------------------------------------------------slides-wrapper----------------------*/
 .slick-prev, .slick-next {
     display: none!important;
+}
+
+/*-------------------------------------------------preloader---------------------------*/
+div#load_screen{
+    background: #fff;
+    opacity: 1;
+    position: fixed;
+    overflow: hidden;
+    z-index:10;
+    width: 100%;
+    height: 100%;
+    transition-property: opacity;
+    transition-duration: .7s;
+}
+div#load_screen .preloader-wheel {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    margin: auto;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 1px solid #212529;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: cssload-spin 575ms infinite linear;
+    -o-animation: cssload-spin 575ms infinite linear;
+    -ms-animation: cssload-spin 575ms infinite linear;
+    -webkit-animation: cssload-spin 575ms infinite linear;
+    -moz-animation: cssload-spin 575ms infinite linear;
+}
+@keyframes cssload-spin {
+    100%{ transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-o-keyframes cssload-spin {
+    100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-ms-keyframes cssload-spin {
+    100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-webkit-keyframes cssload-spin {
+    100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-moz-keyframes cssload-spin {
+    100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
 }
