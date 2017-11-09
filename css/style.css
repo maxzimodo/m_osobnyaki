@@ -26,7 +26,9 @@ html, body {
     /*overflow-x: hidden;*/
 }
 p {
-    text-align: left;
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 10px;
 }
 
 .clearfix:after {
@@ -258,6 +260,10 @@ footer .button {
 img.batya {
     width: 100px;
 }
+div.contact-info {
+    margin: 5px 0;
+    color: inherit;
+}
 /*-------------------------------contact-form----------------------------------------*/
 input:not([type='checkbox']), textarea {
     -webkit-appearance: none;
@@ -294,3 +300,6 @@ button.button {
 /*}*/
 
 /*------------------------------------------------slides-wrapper----------------------*/
+.slick-prev, .slick-next {
+    display: none!important;
+}
